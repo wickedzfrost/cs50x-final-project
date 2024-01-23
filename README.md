@@ -1,8 +1,10 @@
 # SHIRITORI WEB APPLICATION
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/YMM2M9SN2ho
+
 #### Description:
 This is a web application for the traditional japanese word chaining game, Shiritori. This web application utilized Flask with python as it's backend along with Javascript, HTML and CSS. Some functions and templates for the pset9, Finance are used in this project. There are a couple of folders and files utilized and I will explain them below.
 
+# Features
 # flask_session
 This contains the flask session produced during the development of the web application.
 
