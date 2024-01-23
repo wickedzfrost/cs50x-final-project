@@ -1,0 +1,28 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="container py-5 text-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Scores</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in score %}
+                <tr>
+                    <td> {{ i.score }} </td>
+                    <td> {{ i.time }} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

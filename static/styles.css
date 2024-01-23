@@ -1,0 +1,114 @@
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+.bold {
+    font-weight: bold;
+    margin-right: 2em;
+}
+
+.in {
+    margin-top: 1.5em;
+    padding: 10px;
+    background: transparent;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    box-shadow: none;
+    font-size: 32px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.in, div, form, main {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.title {
+    letter-spacing: 8px;
+    font-size: 50px;
+}
+
+.button {
+    background: transparent;
+    font-family: Arial;
+    border: none;
+    border-radius: 30px;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.center-item {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.word {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.word-2 {
+    margin-bottom: 2em;
+    opacity: 0.6;
+}
+
+.info {
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.dis {
+    text-align: left;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}

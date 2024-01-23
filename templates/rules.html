@@ -1,0 +1,23 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Rules
+{% endblock %}
+
+{% block main %}
+    <div>
+        <strong>Shiritori is a Japanese word game in which the players are required to say a word which begins with the final kana of the previous word</strong>
+        <br>
+        <div>
+            <ul>
+                <li>A random word will be chosen as the starting word</li>
+                <li>Only nouns are permitted.</li>
+                <li>Words may not be repeated</li>
+                <li>A player who plays a word ending in the <a href="https://en.wikipedia.org/wiki/Mora_(linguistics)">mora</a> "N" (ん) loses the game, as no Japanese word begins with that character.</li>
+                <li>Phrases connected by no (の; meaning roughly "of") are permitted, but only in those cases where the phrase is sufficiently fossilized to be considered a "word".</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

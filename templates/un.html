@@ -1,0 +1,22 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Change username
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h1 class="info">Current username: <strong> {{ name }} </strong></h1>
+    </div>
+    <form action="/un" method="post">
+        <div class="mb-3 mt-5">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto center" id="username" name="username" placeholder="New username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto center" id="confirm" name="confirm" placeholder="Confirm username" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Change</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <div>
+        <div>
+            <h1 class="info">Current username: <strong>{{ name }}</strong></h1>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div>
+                <p class="info"><a href="/un">Change username</a></p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p class="info"><a href="./ps">Change password</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

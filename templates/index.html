@@ -1,0 +1,15 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container py-5 text-center">
+        <form action="/play">
+            <button class="button">Play</button>
+        </form>
+    </div>
+{% endblock %}

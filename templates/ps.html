@@ -1,0 +1,36 @@
+{% set username = name %}
+
+{% extends "layout.html" %}
+
+{% block script %}
+    <script>
+        function flashMessage() {
+        if ("{{ flash_message }}" == "true") {
+            alert("Password successfully changed.");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function func() {
+            flashMessage()
+        });
+    </script>
+{% endblock %}
+
+{% block title %}
+    Change password
+{% endblock %}
+
+{% block main %}
+    <form action="/ps" method="post">
+        <div class="mb-3 mt-5">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto center" id="username" name="current" placeholder="Current password" type="password">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto center" id="username" name="new" placeholder="New password" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto center" id="confirm" name="confirm" placeholder="Confirm password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Change</button>
+    </form>
+{% endblock %}
